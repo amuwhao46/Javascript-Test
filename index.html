@@ -7,18 +7,19 @@
 <h2>Click this button for a surprise</h2>
 
 <form>
-    <label>Input text</label>
-    <input type="text" id="userInput">
+    <label>Input text:</label>
+    <input type="text" id="uInput"><br>
+    <input type="button" value="Click for Alert" onclick="alertMessage()">
 </form>
 
-<button type="button" onclick="alertMessage()">Click for Alert</button>
+<!--<button type="button" onclick="alertMessage()">Click for Alert</button>-->
 
 <script>
-    function alertMessage(message) {
+    function alertMessage() {
+        var userInput=document.getElementById("uInput").value; 
 
-        alert('Testing')
+        alert(userInput);
 
-        return message;
     }
 </script>
 </body>

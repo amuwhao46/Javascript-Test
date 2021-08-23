@@ -6,13 +6,17 @@
 <body>
 <h2>Click this button for a surprise</h2>
 
+<form>
+    <label>Input text</label>
+    <input type="text" id="userInput">
+</form>
+
 <button type="button" onclick="alertMessage()">Click for Alert</button>
 
 <script>
     function alertMessage(message) {
-        var userInput=document.getElementById("userInput").value;
 
-        alert(userInput)
+        alert('Testing')
 
         return message;
     }
